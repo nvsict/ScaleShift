@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ScaleShift</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app">
+        <header class="app__header">
+            <div class="app__identity">
+                <div class="app__icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none">
+                        <path d="M3 12h2.5l2-6 3 12 2.5-9 1.5 3H21" stroke="white" stroke-width="2"
+                              stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <div>
+                    <h1 class="app__title">ScaleShift</h1>
+                    <p class="app__subtitle">Live Pitch</p>
+                </div>
+            </div>
+            <div class="status" role="status" aria-live="polite">
+                <span class="status__dot status__dot--idle" id="statusDot"></span>
+                <span class="status__label" id="statusLabel">Idle</span>
+            </div>
+        </header>
+
+        <div class="pitch-display">
+            <span class="pitch-display__value" id="pitchValue">0</span>
+            <span class="pitch-display__unit">semitones</span>
+        </div>
+
+        <div class="slider">
+            <input type="range" id="pitchSlider" min="-12" max="12" value="0" step="1" disabled
+                   aria-label="Pitch shift in semitones">
+            <div class="slider__ticks" aria-hidden="true">
+                <span>-12</span><span>0</span><span>+12</span>
+            </div>
+        </div>
+
+        <p class="error" id="errorBanner" role="alert" hidden></p>
+
+        <div class="actions">
+            <button class="btn btn--primary" id="connectBtn">Connect to This Tab</button>
+            <button class="btn btn--secondary" id="disconnectBtn" hidden>Disconnect</button>
+        </div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>

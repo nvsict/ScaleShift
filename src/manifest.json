@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "ScaleShift — Live Pitch",
+  "version": "1.0.0",
+  "description": "Shift the pitch of any tab's audio in real time, without changing playback speed.",
+  "minimum_chrome_version": "109",
+  "permissions": [
+    "activeTab",
+    "tabCapture",
+    "offscreen",
+    "storage"
+  ],
+  "background": {
+    "service_worker": "background/service_worker.js"
+  },
+  "action": {
+    "default_popup": "popup/index.html",
+    "default_title": "ScaleShift — Pitch Controls"
+  }
+}
