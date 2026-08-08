@@ -1,15 +1,14 @@
-# ScaleShift
-
-ScaleShift is a live audio pitch-shifting extension for Chromium browsers. 
-
 ## 🛠 Installation
 
-To ensure rapid updates, ScaleShift is distributed directly via GitHub. Here is how to install it in a few seconds:
+Because ScaleShift interacts with real-time audio streams via Manifest V3's Offscreen API, it is currently released directly via GitHub to ensure rapid updates and full developer control. 
 
-1. **Download the Extension:** Go to the [Releases page](../../releases/latest) and download the `ScaleShift.crx` file.
-2. **Open Extensions:** In your browser (Chrome, Edge, Brave), type `chrome://extensions/` into the address bar and press Enter.
-3. **Enable Developer Mode:** Toggle the **"Developer mode"** switch located in the top right corner.
-4. **Drag and Drop:** Simply drag the downloaded `ScaleShift.crx` file from your computer and drop it anywhere onto the Extensions page.
-5. **Confirm:** Click "Add Extension" when prompted.
+Here is how to install it in your Chromium-based browser (Chrome, Edge, Brave):
 
-ScaleShift is now installed! Pin it to your toolbar to access the live pitch controls.
+1. **Download the latest release:** Go to the [Releases page](../../releases/latest) and download the `ScaleShift-vX.X.X.zip` file.
+2. **Extract the folder:** Unzip the downloaded file to a permanent location on your computer (e.g., a dedicated "Extensions" folder in your Documents). *Note: Do not delete this folder after installation, or the extension will break.*
+3. **Open Extension Management:** Type `chrome://extensions/` into your address bar and hit Enter.
+4. **Enable Developer Mode:** Toggle the **"Developer mode"** switch in the top right corner.
+5. **Load the Extension:** Click the **"Load unpacked"** button in the top left corner.
+6. **Select the Folder:** Navigate to the folder you extracted in Step 2 and select it. 
+
+ScaleShift is now permanently installed! Pin it to your toolbar for quick access to live pitch controls.
