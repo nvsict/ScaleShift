@@ -4,7 +4,7 @@ Because ScaleShift interacts with real-time audio streams via Manifest V3's Offs
 
 Here is how to install it in your Chromium-based browser (Chrome, Edge, Brave):
 
-1. **Download the latest release:** Go to the [Releases page](../../releases/latest) and download the `ScaleShift-vX.X.X.zip` file.
+1. **Download the latest release:** Go to the [Releases page](../../releases/latest) and download the `ScaleShift v1.1.6.zip` file.
 2. **Extract the folder:** Unzip the downloaded file to a permanent location on your computer (e.g., a dedicated "Extensions" folder in your Documents). *Note: Do not delete this folder after installation, or the extension will break.*
 3. **Open Extension Management:** Type `chrome://extensions/` into your address bar and hit Enter.
 4. **Enable Developer Mode:** Toggle the **"Developer mode"** switch in the top right corner.
